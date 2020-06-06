@@ -1,6 +1,5 @@
 'use strict';
 
-const assert = require('assert').strict;
 const sinon = require('sinon');
 
 const { sleep, usleep } = require('../lib');
