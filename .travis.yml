@@ -1,0 +1,34 @@
+language: node_js
+node_js:
+  - '10'
+  - '12'
+cache: npm
+script:
+  - npm run lint
+  - npm run test-ci
+jobs:
+  include:
+    - stage: master-coverage
+      if: (branch = master)
+      git:
+        depth: 1
+      node_js: '12'
+      deploy:
+        - provider: script
+          edge: true
+          script: bash .deploy-coverage.sh
+    - stage: release
+      if: (tag =~ ^v)
+      git:
+        depth: 1
+      node_js: '12'
+      deploy:
+        - provider: npm
+          edge: true
+          registry: https://registry.npmjs.org
+          access: public
+          on:
+            tags: true
+            repo: jormaechea/gotosleep
+      # after_deploy:
+      #   - bash .deploy-coverage.sh
