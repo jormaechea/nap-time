@@ -29,6 +29,6 @@ jobs:
           access: public
           on:
             tags: true
-            repo: jormaechea/gotosleep
+            repo: jormaechea/nap-time
       # after_deploy:
       #   - bash .deploy-coverage.sh

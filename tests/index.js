@@ -4,7 +4,7 @@ const sinon = require('sinon');
 
 const { sleep, usleep } = require('../lib');
 
-describe('Gotosleep', () => {
+describe('Nap time', () => {
 
 	let clock;
 

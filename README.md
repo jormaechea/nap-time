@@ -1,17 +1,17 @@
-<h1 align="center">:zzz: Go to sleep :zzz:</h1>
+<h1 align="center">:zzz: Nap time :zzz:</h1>
 
 <p align="center">
 
-<a href="https://www.npmjs.com/package/gotosleep">
-	<img src="https://badge.fury.io/js/gotosleep.svg" alt="npm version" />
+<a href="https://www.npmjs.com/package/nap-time">
+	<img src="https://badge.fury.io/js/nap-time.svg" alt="npm version" />
 </a>
 
-<a href="https://travis-ci.org/jormaechea/gotosleep">
-	<img src="https://travis-ci.org/jormaechea/gotosleep.svg?branch=master" alt="Build status" />
+<a href="https://travis-ci.org/jormaechea/nap-time">
+	<img src="https://travis-ci.org/jormaechea/nap-time.svg?branch=master" alt="Build status" />
 </a>
 
-<a href="https://coveralls.io/github/jormaechea/gotosleep?branch=master">
-	<img src="https://coveralls.io/repos/github/jormaechea/gotosleep/badge.svg?branch=master" alt="Coverage status" />
+<a href="https://coveralls.io/github/jormaechea/nap-time?branch=master">
+	<img src="https://coveralls.io/repos/github/jormaechea/nap-time/badge.svg?branch=master" alt="Coverage status" />
 </a>
 
 </p>
@@ -23,13 +23,13 @@
 ## :inbox_tray: Installation
 
 ```sh
-npm install gotosleep
+npm install nap-time
 ```
 
 ## :computer: Usage
 
 ```js
-const { sleep, usleep } = require('gotosleep');
+const { sleep, usleep } = require('nap-time');
 
 (async () => {
 
